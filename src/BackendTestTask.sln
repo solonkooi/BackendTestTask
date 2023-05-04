@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendTestTask.Api", "BackendTestTask.Api\BackendTestTask.Api.csproj", "{5000EFF2-7EA0-4DEE-8DF9-40EBAFC6124C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-compose", "..\docker-compose.dcproj", "{635BB14B-1E26-4C7E-9369-D11E3775CDAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{5000EFF2-7EA0-4DEE-8DF9-40EBAFC6124C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5000EFF2-7EA0-4DEE-8DF9-40EBAFC6124C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5000EFF2-7EA0-4DEE-8DF9-40EBAFC6124C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
