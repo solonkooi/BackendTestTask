@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
@@ -16,6 +17,11 @@
       <Content Include="..\Dockerfile">
         <Link>Dockerfile</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BackendTestTask.Business\BackendTestTask.Business.csproj" />
+      <ProjectReference Include="..\BackendTestTask.Core\BackendTestTask.Core.csproj" />
     </ItemGroup>
 
 </Project>

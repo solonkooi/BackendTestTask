@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendTestTask.Api", "Back
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-compose", "..\docker-compose.dcproj", "{635BB14B-1E26-4C7E-9369-D11E3775CDAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendTestTask.Core", "BackendTestTask.Core\BackendTestTask.Core.csproj", "{FA578E0B-0A6F-42AC-80E3-3CE13EC3BFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackendTestTask.Business", "BackendTestTask.Business\BackendTestTask.Business.csproj", "{2B9F9228-9C87-460F-AD98-9157C9948BFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{635BB14B-1E26-4C7E-9369-D11E3775CDAF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FA578E0B-0A6F-42AC-80E3-3CE13EC3BFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA578E0B-0A6F-42AC-80E3-3CE13EC3BFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA578E0B-0A6F-42AC-80E3-3CE13EC3BFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA578E0B-0A6F-42AC-80E3-3CE13EC3BFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9F9228-9C87-460F-AD98-9157C9948BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9F9228-9C87-460F-AD98-9157C9948BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9F9228-9C87-460F-AD98-9157C9948BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9F9228-9C87-460F-AD98-9157C9948BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
