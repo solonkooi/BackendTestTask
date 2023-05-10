@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  webapi:
+    container_name: webapi
+    build:
+      context: ./src
+      dockerfile: ./Dockerfile
+    depends_on:
+      - postgres
+      - flyway
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=password
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
+    volumes:
+      - ./https:/https:ro
+  postgres:
+    image: postgres:12.2
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=database
+  flyway:
+    image: flyway/flyway:6.3.1
+    command: -configFiles=/flyway/conf/flyway.config -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      - ./database:/flyway/sql
+      - ./config/docker-flyway.config:/flyway/conf/flyway.config
+    depends_on:
+      - postgres
